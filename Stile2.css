@@ -1,0 +1,237 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    color: #333;
+    background-color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header and navigation */
+header {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    position: absolute;
+    top: 20px;
+    right: 180px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: blue;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+/* Estilo para cuando el enlace recibe el foco */
+nav ul li a:focus {
+    outline: 2px solid #ffbf00;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo al hacer hover para mejorar accesibilidad con el mouse */
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main Container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Accessibility Resources Section */
+
+/* Main Title Style for Resources Section */
+.main-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: bold;
+
+}
+
+.resources-section {
+    width: 100%;
+    padding: 2rem;
+    min-height: 25vh;
+    /* Altura mínima más amplia para evitar solapamiento */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font: black;
+
+}
+
+.resources-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: blue;
+}
+
+.resources-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.download-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+    /* Centra el botón horizontalmente */
+}
+
+.download-button:hover {
+    background-color: #218838;
+}
+
+/* Universal Accessibility Section */
+.universal-section {
+    width: 100%;
+    padding: 2rem;
+    min-height: 35vh;
+    /* Ajustamos la altura mínima */
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.universal-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: blue;
+    text-align: center;
+}
+
+.universal-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Hero Image Section */
+.hero-section {
+    width: 100%;
+    height: 30vh;
+    /* Aumentamos la altura de la sección */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section img {
+    max-height: 100%;
+    /* Ajusta el tamaño máximo de la imagen a la sección */
+    width: auto;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* High-Contrast Mode applied to the whole body */
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast * {
+    color: #fff !important;
+}
+
+.high-contrast a {
+    color: #00ff00 !important;
+}
+
+.high-contrast button,
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.high-contrast img {
+    filter: invert(1);
+}
+
+/* High-Contrast Toggle Button */
+.contrast-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contrast-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .resources-section,
+    .universal-section,
+    .hero-section {
+        padding: 1rem;
+    }
+
+    .resources-section,
+    .universal-section {
+        min-height: auto;
+        /* Permite que la altura sea flexible en pantallas pequeñas */
+    }
+
+    .hero-section {
+        height: 25vh;
+        /* Ajuste de la altura en pantallas más pequeñas */
+    }
+}

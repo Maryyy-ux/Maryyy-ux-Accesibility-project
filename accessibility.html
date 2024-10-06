@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility resources and screen reader download.">
+    <title>Accessibility - Download Screen Reader</title>
+    <link rel="stylesheet" href="Stile2.css">
+</head>
+
+<body>
+
+    <!-- Navigation using semantic elements -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#resources">Useful resources</a></li>
+                <li><a href="#universal">Universal accessibility</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <button id="contrast-toggle" class="contrast-button" aria-pressed="false" aria-label="Toggle High Contrast">
+                Toggle High Contrast
+            </button>
+        </nav>
+        <div id="skipLinks">
+            <div class="wrap">
+                <a accesskey="1" class="Skipresources" tabindex="1"
+                    href="file:///C:/Users/Mar%C3%ADa/OneDrive/Documentos/Documentos/GitHub/Maryyy-ux-Accesibility-project/accessibility.html#resources">
+                    Skip to Useful resources</a>
+                <a accesskey="2" class="skipnavigation" tabindex="2"
+                    href="file:///C:/Users/Mar%C3%ADa/OneDrive/Documentos/Documentos/GitHub/Maryyy-ux-Accesibility-project/accessibility.html#universal">Skip
+                    to Universal accessibility
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section for Accessibility information -->
+    <main>
+        <section id="resources" class="resources-section">
+            <h1 class="main-title">Useful resources</h1> <!-- Título del contenido -->
+            <p>
+                We are committed to making our website accessible to everyone. If you need a screen reader to navigate
+                our website, you can download the NVDA (NonVisual Desktop Access) screen reader from the following link:
+            </p>
+
+            <!-- Download link inside the body -->
+            <a href="https://www.nvaccess.org/download/" target="_blank" class="download-button">Download NVDA Screen
+                Reader</a>
+        </section>
+
+        <section id="universal" class="universal-section">
+            <h1>Universal Accessibility</h1>
+            <p>
+                The goal of the Together fund is for all individuals, regardless of disability, age, or the use of
+                unconventional technologies to access the web, to be able to navigate the pages of this website without
+                encountering access difficulties—in other words, to enjoy accessibility to our community's page.</p>
+            <p>
+                At this end, the development of Together fund's website has been based on the compliance with the Web
+                Content
+                Accessibility Guidelines (WCAG) 2.0 established by the W3C (World Wide Web Consortium).</p>
+            <p>
+                Some of the functionalities implemented on Together's website to make all web content more accessible
+                are:</p>
+            <p>
+                • Font sizes have been defined using relative units, allowing users to enlarge or reduce the font
+                size through browser options.</p>
+            <p>
+                • There is a link available to select a high-contrast color palette.</p>
+            <p>
+                • The pages have a clear structure both for users who can view all the content and for those using a
+                screen reader.</p>
+            <p>
+                After these common elements throughout the website, the specific content of the page is displayed. </p>
+            <p>
+                The different sections are marked as section headings, allowing users of screen readers with voice
+                synthesis to easily navigate through the sections by pressing the "H" key or tab.</p>
+            <p>
+                • The HTML and CSS code used adheres to formal standards to ensure correct display of content across
+                different browsers.
+            </p>
+        </section>
+
+        <!-- Hero Image Section -->
+        <section id="hero" class="hero-section">
+            <img src="Cover.jpg" alt="Hero image describing accessibility" />
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Together Found. All Rights Reserved.</p>
+    </footer>
+    <script src="Script2.js"></script>
+</body>
+
+</html>

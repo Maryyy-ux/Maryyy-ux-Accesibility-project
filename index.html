@@ -4,31 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Accesibility project</title>
-
-
+    <meta name="description" content="A simple accessible website example.">
+    <title>Accessible & Responsive Website</title>
+    <link rel="stylesheet" href="Stile.css">
 </head>
 
 <body>
-    <h1> three words</h1>
-    <nav>
-        <a>One word</a>
-        <a>One word</a>
-        <a>One word</a>
-    </nav>
-    <main>
-        <header>
-            <h1>Five words</h1>
-        </header>
-        <section>
-            <h2>Three words</h2>
-            <p>Forty-six words</p>
-        </section>
+
+    <!-- Navigation using semantic elements -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li> <!-- New link to Accessibility page -->
+            </ul>
+            <button id="contrast-toggle" class="contrast-button" aria-pressed="false">Toggle High Contrast</button>
+        </nav>
+        <div id="skipLinks">
+            <div class="wrap">
+                <a accesskey="1" class="Skipresources" tabindex="1"
+                    href="file:///C:/Users/Mar%C3%ADa/OneDrive/Documentos/Documentos/GitHub/Maryyy-ux-Accesibility-project/index.html#contact">
+                    Skip to Contact us</a>
+                <a accesskey="2" class="skipnavigation" tabindex="2"
+                    href="file:///C:/Users/Mar%C3%ADa/OneDrive/Documentos/Documentos/GitHub/Maryyy-ux-Accesibility-project/index.html#services">Skip
+                    to Our Services</a>
+                <a accesskey="3" class="skipnavigation" tabindex="3"
+                    href="file:///C:/Users/Mar%C3%ADa/OneDrive/Documentos/Documentos/GitHub/Maryyy-ux-Accesibility-project/accessibility.html">Skip
+                    to Accessibility</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <div class="about-content" role="region" aria-labelledby="about-title">
+
+            <p id="about-title">Together, we are building a future where inclusivity isn’t just an idea—it’s a reality.
+            </p>
+            <p>Young lady at her laptop</p>
+            <video width="700" height="250" controls>
+                <source src="4106997-sd_640_360_25fps.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="blinds-yankrukov-7695370.jpg" alt="Image related to Impaired travels">
+                <p>Meeting to learn Braille</p>
+            </div>
+            <div class="service-item">
+                <p>We believe that no one should face their challenges alone, and we are committed to providing the
+                    guidance, care, and encouragement needed to navigate life’s obstacles.</p>
+            </div>
+            <div class="service-item">
+                <img src="Beers.jpg" alt="Friends meeting">
+                <p>Friends meeting</p>
+
+            </div>
+            <div class="service-item">
+                <p>In the heart of our community, we have discovered the true meaning of strength. Here, disabilities
+                    are not seen as limitations, but as different ways of moving through the world.</p>
+            </div>
+            <div class="service-item">
+                <img src="working.jpg" alt="Image related to Consulting">
+                <p>Work meeting</p>
+            </div>
+            <div class="service-item">
+                <p>By providing the tools, support, and connections needed for success, we empower individuals to pursue
+                    fulfilling careers. Because when everyone is given the chance to shine, we all succeed.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>five words</p>
+        <p>&copy; 2024 Together fund. All Rights Reserved.</p>
     </footer>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
+
 
 </body>
 
