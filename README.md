@@ -2,4 +2,4 @@ This is the 8th weeks project. Accessibility. meeting WCAG, AA criteria, with ea
 
 I have created my respository from scratch (first time).
 
-Netflify link: 
+Netflify link: https://6702d62f150755a03e9de591--scintillating-praline-7b5d1a.netlify.app/
