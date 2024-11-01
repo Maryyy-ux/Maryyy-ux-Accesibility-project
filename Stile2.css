@@ -235,3 +235,47 @@ footer {
         /* Ajuste de la altura en pantallas más pequeñas */
     }
 }
+
+@media (max-width: 320px) {
+    body {
+        font-size: medium;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        position: static;
+        right: auto;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .about-content {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .services-section {
+        padding: 2rem 1rem;
+    }
+
+    .contact-section {
+        padding: 2rem 1rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+    }
+}
